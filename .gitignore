@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Uvicorn / FastAPI
+*.pid
+*.sock
+
+# MacOS
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+
+# Docker
+Dockerfile
+docker-compose.yml
+*.dockerignore
