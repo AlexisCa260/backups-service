@@ -1,14 +1,17 @@
 from datetime import datetime
 
+import pytz
 from sqlalchemy import text
 
 from config import SSH_USER
 from db import get_engine
 
+zona_colombia = pytz.timezone("America/Bogota")
+
 
 def guardar_backrest(host: str, ip: str, marca: str, configuracion: str):
     engine = get_engine()
-    fecha = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+    fecha = datetime.now(zona_colombia).strftime("%Y-%m-%d %H:%M:%S")
 
     query = text("""
         INSERT INTO backrest (date, backrestnew, tipo, usuario, ip, nombre, marca, modelo)

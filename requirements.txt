@@ -1,0 +1,12 @@
+pymysql
+sshtunnel
+paramiko<3.0
+python-dotenv
+apscheduler
+schedule
+fastapi
+sqlalchemy
+PyJWT==2.9.0
+uvicorn
+psycopg2
+pytz
